@@ -149,6 +149,10 @@ a:hover {
   color: white;
 }
 
+.navigation a:hover {
+  border-bottom: 3px solid black;
+}
+
 /* About page css */
 .pagetitle {
   position: relative;
@@ -240,7 +244,7 @@ img {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #008cba;
+  background-color: rgb(252, 245, 231);
   overflow: hidden;
   width: 0;
   height: 100%;
@@ -264,8 +268,8 @@ img {
 
 .overlaytext {
   white-space: nowrap;
-  color: white;
-  font-size: 20px;
+  color: black;
+  font-size: 30px;
   position: absolute;
   overflow: hidden;
   top: 50%;
@@ -294,7 +298,6 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -303,7 +306,7 @@ img {
 
 .intro-text {
   color: white;
-  font-family: "heebo", sans-serif;
+  font-family: "cabin", sans-serif;
   font-size: 3rem;
 }
 
