@@ -17,7 +17,7 @@ body {
   font-family: "Orpheus Pro";
   align-items: center;
   width: 100%;
-  height: 80%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -27,6 +27,7 @@ body,
 html {
   margin: 0;
 
+  height: 100%;
   padding: 0;
 }
 .navigation {
@@ -181,25 +182,27 @@ a:hover {
 
 .projectcontainer {
   /* background-color: green; */
-  width: 800px;
+  width: 1000px;
   height: 500px;
   margin: 10px;
   position: relative;
   display: inline-block;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .projectcontainer img,
 img {
   position: relative;
-
+  align-self: center;
+  top: 17px;
   width: 300px;
   height: auto;
-  border: rgb(143, 143, 140) solid;
+  /* border: rgb(143, 143, 140) solid; */
   border-radius: 10%;
   min-width: 150px;
   max-width: 100%;
+  opacity: 1;
 }
 @media screen and (max-width: 600px) {
   .projectcontainer {
@@ -214,20 +217,105 @@ img {
   }
 }
 
-.img1container {
-  width: 300px;
-
-  height: 175px;
+.img1container,
+.img2container {
+  width: 400px;
+  position: relative;
+  height: 200px;
   min-width: 300px;
+  top: 30px;
+  background-color: rgb(262, 255, 241);
+  display: flex;
+  justify-content: center;
+  border: white solid;
+  border-radius: 70px;
 }
 .img2container {
-  width: 300px;
-  height: 175px;
   right: 0;
-  display: inline-block;
-  min-width: 300px;
 }
 
+.overlayimg1,
+.overlayimg2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008cba;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: 0.5s ease;
+  opacity: 0.5;
+  border-radius: 70px;
+}
+
+.overlayimg2 {
+  left: 100%;
+}
+
+.img1container:hover .overlayimg1 {
+  width: 100%;
+}
+
+.img2container:hover .overlayimg2 {
+  width: 100%;
+  left: 0;
+}
+
+.overlaytext {
+  white-space: nowrap;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.intro {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(252, 245, 231);
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(100%);
+}
+
+.intro-text {
+  color: white;
+  font-family: "heebo", sans-serif;
+  font-size: 3rem;
+}
+
+.hide {
+  background: black;
+  overflow: hidden;
+}
+
+.hide span {
+  transform: translateY(100%);
+  display: inline-block;
+}
 /* .img1container {
   position: relative;
   right: 100px;
