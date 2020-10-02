@@ -164,7 +164,7 @@ a:hover {
 }
 .aboutcontainer p {
   font-size: 30px;
-  line-height: 1.25;
+  line-height: 1.7;
 }
 
 .aboutcontainer h2 {
@@ -315,7 +315,7 @@ img {
 
 .intro-text {
   color: white;
-  font-family: "cabin", sans-serif;
+  font-family: "Orpheus Pro";
   font-size: 3rem;
 }
 
