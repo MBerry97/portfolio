@@ -42,7 +42,6 @@ html {
   padding: 0;
   transition: background 0.5s;
   font-size: 45px;
-  margin: 40px;
 }
 
 .navigation ul {
@@ -63,10 +62,11 @@ header {
 }
 #adjust {
   text-align: center;
-  top: 10px;
+
   cursor: pointer;
   animation: spin 7s linear infinite;
   font-size: 35px;
+  margin-top: -2rem;
 }
 @keyframes spin {
   0% {
@@ -87,18 +87,18 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 80%;
+  height: 100vh;
   min-height: 500px;
   overflow: scroll;
 }
 
 .wrapper {
-  padding: 4rem;
-  min-width: 300px;
+  padding: 3.5rem;
 }
 
 .wrapper--np {
-  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .main p {
@@ -108,37 +108,17 @@ header {
   line-height: 1.5;
   word-wrap: normal;
   width: 80%;
-  margin-top: 75px;
+  /* margin-top: 75px; */
   margin-bottom: 0;
-  min-width: 500px;
+  margin-top: 0;
 }
 
-footer {
-  text-align: center;
-  /* positiong: absolute; */
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  margin-bottom: 5px;
-  margin-top: 50px;
-}
-footer a {
-  padding: 0rem 2rem;
-  /* position: relative; */
-}
-footer a i {
-  color: black;
-  font-size: 2.4rem;
-  transition: all 0.3s ease-in-out;
+.socials a {
+  padding: 1.5rem;
 }
 
-footer a i:hover {
-  color: white;
-}
-
-footer,
-div.wrapper {
-  padding: 0;
+.socials {
+  padding-top: 2rem;
 }
 a {
   color: rgb(0, 0, 0);
@@ -176,11 +156,10 @@ a:hover {
 }
 
 .aboutcontainer {
-  width: 60%;
   height: 600px;
   position: relative;
   margin: 0 auto;
-  min-width: 500px;
+  max-width: 800px;
   text-align: center;
 }
 .aboutcontainer p {
@@ -200,13 +179,13 @@ a:hover {
 
 .projectcontainer {
   /* background-color: green; */
-  width: 1000px;
+  width: 100%;
   height: 500px;
   margin: 10px;
   position: relative;
-  display: inline-block;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .projectcontainer img,
@@ -222,16 +201,32 @@ img {
   max-width: 100%;
   opacity: 1;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
   .projectcontainer {
-    flex-direction: column;
     justify-content: center;
-    align-content: center;
+    /* align-content: center; */
     align-self: center;
   }
   .img1container,
   .img2container {
-    align-self: center;
+    /* align-self: center; */
+    width: 100%;
+  }
+  .main p {
+    font-size: 2rem;
+  }
+  .wrapper {
+    padding: 2rem;
+  }
+  .aboutcontainer p {
+    font-size: 1.7rem;
+    line-height: 1.6;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 640px) {
+  .main p {
+    font-size: 3rem;
   }
 }
 
@@ -240,7 +235,7 @@ img {
   width: 400px;
   position: relative;
   height: 200px;
-  min-width: 300px;
+  margin: 0 20px;
   top: 30px;
   background-color: rgb(262, 255, 241);
   display: flex;
