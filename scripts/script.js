@@ -1,11 +1,12 @@
 const adjustIcon = document.querySelector("#adjust");
 const background = document.querySelector("body");
 const navBar = document.querySelectorAll(".navlist li");
+const particles = document.querySelector("#particles-js");
 
 adjustIcon.addEventListener("click", () => {
   background.classList.toggle("change");
   // navBar.classList.toggle("change");
-  console.log(navBar);
+  particles.classList.toggle("particles-dark")
 });
 
 const tl = gsap.timeline({ defaults: { ease: "power1.out" } });

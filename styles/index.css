@@ -348,27 +348,14 @@ img {
   transform: translateY(100%);
   display: inline-block;
 }
-/* .img1container {
-  position: relative;
-  right: 100px;
-  display: inline-block;
-  left: 200px;
-} */
 
-/* .img1background {
-  display: inline-block;
-  background-color: springgreen;
-  width: 450px;
-  height: 200px;
-  transition: all 0.3s ease-in-out;
+#particles-js {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
 }
 
-.img1background:hover {
-  color: white;
-} */
-
-/* .aboutparagraph,
-h2 {
-  text-align: center;
-} */
-/* padding params, just 1 is for all, 2 params 1st is for top and bottom 2nd left and right  */
+.particles-dark {
+  z-index: 1;
+}
