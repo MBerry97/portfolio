@@ -172,7 +172,8 @@ a:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 600px;
+  height: 100%;
+  max-height: 600px;
   position: relative;
   margin: 0 auto;
   max-width: 800px;
@@ -282,33 +283,26 @@ a:hover {
     text-align: center;
     font-size: 1rem;
   }
-  .aboutcontainer,
-  .whatDoiDo-container,
-  .section3 h1 {
-    width: 70%;
-  }
 }
 
 @media screen and (max-width: 768px) and (min-width: 640px) {
   .main p {
     font-size: 3rem;
   }
+  .aboutcontainer,
+  .whatDoiDo-container {
+    max-height: none;
+  }
 }
 
 @media screen and (max-width: 375px) {
-  .aboutcontainer,
-  .whatDoiDo-container,
-  .section3 h1 {
-    width: 100%;
-  }
-
   .aboutcontainer h1,
   .whatDoiDo-container h1 {
     font-size: 20px;
   }
   .aboutcontainer p,
   .whatDoiDo-container p {
-    font-size: 12px;
+    font-size: 15px;
   }
 
   .icon-container {
@@ -319,81 +313,11 @@ a:hover {
   .section3 {
     margin-top: 40px;
   }
-}
-
-.img1container,
-.img2container,
-.img3container,
-.img4container {
-  width: 400px;
-  position: relative;
-  height: 200px;
-  margin: 0 20px;
-  top: 30px;
-  background-color: rgb(262, 255, 241);
-  display: flex;
-  justify-content: center;
-  border: white solid;
-  border-radius: 70px;
-}
-.img2container {
-  right: 0;
-}
-
-.img3container {
-  left: 0;
-}
-
-.overlayimg1,
-.overlayimg2,
-.overlayimg3,
-.overlayimg4 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgb(252, 245, 231);
-  overflow: hidden;
-  width: 0;
-  height: 100%;
-  transition: 0.5s ease;
-  opacity: 0.5;
-  border-radius: 70px;
-}
-
-.overlayimg2,
-.overlayimg4 {
-  left: 100%;
-}
-
-.img1container:hover .overlayimg1 {
-  width: 100%;
-}
-
-.img2container:hover .overlayimg2 {
-  width: 100%;
-  left: 0;
-}
-
-.img3container:hover .overlayimg3 {
-  width: 100%;
-}
-
-.img4container:hover .overlayimg4 {
-  width: 100%;
-  left: 0;
-}
-
-.overlaytext {
-  white-space: nowrap;
-  color: black;
-  font-size: 30px;
-  position: absolute;
-  overflow: hidden;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  .section1,
+  .section2,
+  .section3 {
+    height: auto;
+  }
 }
 
 .intro {
