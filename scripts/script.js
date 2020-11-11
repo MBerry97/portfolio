@@ -6,7 +6,6 @@ const particles = document.querySelector("#particles-js");
 adjustIcon.addEventListener("click", () => {
   background.classList.toggle("change");
   // navBar.classList.toggle("change");
-  particles.classList.toggle("particles-dark")
 });
 
 const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
