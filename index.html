@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="/styles/index.css" />
+    <link rel="stylesheet" href="styles/index.css" />
     <script
       src="https://kit.fontawesome.com/4586eb8737.js"
       crossorigin="anonymous"
@@ -17,7 +17,7 @@
   </head>
   <body>
     <!-- <header>
-      
+
       <div class="wrapper">
         <nav class="navigation">
           <ul class="navlist">
@@ -28,7 +28,7 @@
         </nav>
       </div>
     </header> -->
-    
+
 
     <div class="wrapper wrapper--np">
       <div id="particles-js"> </div>
@@ -57,12 +57,12 @@
             <i class="devicon-github-plain-wordmark" alt="GitHub logo"></i>
           </a>
         </div>
-        
+
       </main>
 
       <div class="section2">
-        
-          
+
+
           <div class="aboutcontainer">
             <h1>A little bit about me...</h1>
             <p>
@@ -70,7 +70,7 @@
               Front-End Development Recruitment Consultant. Graduated in Marketing
               from Lancaster University in 2018.
             </p>
-        
+
             <p>
               I discovered my a passion for coding during my stint as a Recruitment
               Consultant. I started to fiddle around with HTML and CSS to gain a better
@@ -96,53 +96,45 @@
             </div>
           </div>
 
-          
+
       </div>
 
       <div class="section3">
-        <h1>Whilst you're here, check out a few projects I have made...</h1>
-        
-       
-            <div class="carousel" data-flickity='{ "autoPlay": true }'>
 
-              <div class="carousel-cell">
-            <a href="https://github.com/MBerry97/backend-project" target="_blank"><img src="images/backend-api.png" />
-        </a>
-          </div>
+        <div class="carousel-container">
+          <h2>Whilst you're here, check out a few projects I have made...</h2>
 
-        <div class="carousel-cell">
-          <a href="https://github.com/MBerry97/northcoders-fe-news" target="_blank"><img class="img2"
-                src="images/nc-news.png" />
-        
-        </a>
-            </div>
-        
-        <div class="carousel-cell">
-            <a href="https://github.com/MBerry97/meteorite-map" target="_blank"><img class="img3"
-                src="images/meteorite-map.png" />
-             
-        </a>
-          </div>
-    
-        <div class="carousel-cell">
-            <a href="https://github.com/MBerry97/final_project" target="_blank"><img class="img3" src="images/nchelper.png" />
-              
+
+          <div class="carousel">
+
+            <a class="carousel-cell" href="https://github.com/MBerry97/backend-project" target="_blank">
+              <div style="background-image:url('images/backend-api.png')"></div>
             </a>
+
+            <a class="carousel-cell" href="https://github.com/MBerry97/northcoders-fe-news" target="_blank">
+              <div style="background-image:url('images/nc-news.png')"></div>
+            </a>
+
+            <a class="carousel-cell" href="https://github.com/MBerry97/meteorite-map" target="_blank">
+              <div style="background-image:url('images/meteorite-map.png')"></div>
+            </a>
+
+            <a class="carousel-cell" href="https://github.com/MBerry97/final_project" target="_blank">
+              <div style="background-image:url('images/nchelper.png')"></div>
+            </a>
+
+          </div>
         </div>
 
-            </div>
-          </div>
 
-          
+      </div>
+
+
           </div>
         </div>
-       
+
       </div>
     </div>
-    
-    
-  
-
 
 
 
@@ -156,14 +148,15 @@
     </div>
     <div class="slider"></div>
 
-    
-    
+
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
       integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
       crossorigin="anonymous"
     ></script>
-    <script src="/scripts/script.js"></script>
+    <script src="./scripts/flickity.pkgd.min.js"></script>
+    <script src="scripts/script.js"></script>
     <script type='text/javascript' src='./scripts/particles.js'></script>
     <script type='text/javascript' src='./scripts/app.js'></script>
     <script src='./scripts/scroll-out.js'></script>
@@ -171,6 +164,5 @@
     ScrollOut({
       targets: 'h1, p, div'
     })</script>
-    <script src="./scripts/flickity.pkgd.min.js"></script>
   </body>
 </html>
