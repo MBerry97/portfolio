@@ -1,12 +1,11 @@
 const adjustIcon = document.querySelector("#adjust");
 const background = document.querySelector("body");
 const navBar = document.querySelectorAll(".navlist li");
-const particles = document.querySelector("#particles-js");
 
-adjustIcon.addEventListener("click", () => {
-  background.classList.toggle("change");
-  // navBar.classList.toggle("change");
-});
+
+const aboutBorder = document.querySelector("navigation");
+
+
 
 const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
 
@@ -20,12 +19,9 @@ tl.fromTo("#adjust", { opacity: 0 }, { opacity: 1, duration: 2 });
 //Sides of index para slide in when page loads
 
 //projects page, organise steps with captions either side and a invsible box underneats that highlights when u hover over
-const root = document.documentElement;
-const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
-const marqueeContent = document.querySelector("ul.marquee-content");
 
-root.style.setProperty("--marquee-elements", marqueeContent.children.length);
-
-for(let i=0; i<marqueeElementsDisplayed; i++) {
-  marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
-}
+adjustIcon.addEventListener("click", () => {
+  background.classList.toggle("change");
+  // navBar.classList.toggle("change");
+  // aboutBorder.classList.toggle("change");
+});
