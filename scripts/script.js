@@ -24,3 +24,14 @@ adjustIcon.addEventListener("click", () => {
   // navBar.classList.toggle("change");
   // aboutBorder.classList.toggle("change");
 });
+
+
+
+var flkty = new Flickity( '.carousel', {
+  cellAlign: 'left',
+  contain: true,
+  wrapAround: false,
+  prevNextButtons: true,
+  pageDots: true,
+  autoPlay: 6000,
+});
