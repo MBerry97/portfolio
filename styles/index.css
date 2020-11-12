@@ -388,7 +388,7 @@ a:hover {
   /* border: 2px black solid; */
 }
 
-.box {
+.box-tag {
   margin-top: 20%;
   margin-left: 2%;
 }
@@ -439,6 +439,9 @@ a:hover {
   .intro-text {
     font-size: 2.5rem;
   }
+  .main p {
+    font-size: 2rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -473,5 +476,8 @@ a:hover {
   .aboutcontainer p,
   .whatDoiDo-container p {
     font-size: 1.2rem;
+  }
+  .box-tag {
+    margin-top: 10%;
   }
 }
