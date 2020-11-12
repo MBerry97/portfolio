@@ -73,7 +73,7 @@ html {
 
 .main p {
   position: relative;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: center;
   line-height: 1.5;
   word-wrap: normal;
@@ -388,6 +388,43 @@ a:hover {
   /* border: 2px black solid; */
 }
 
+.box {
+  margin-top: 20%;
+  margin-left: 2%;
+}
+
+.box span {
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}
+.box span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+
+.box span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
+}
+
 @media (min-width: 640px) {
   .carousel-cell {
     width: 50%;
@@ -397,10 +434,6 @@ a:hover {
 @media (min-width: 768px) {
   .section2 {
     flex-direction: row;
-  }
-
-  .main p {
-    font-size: 3rem;
   }
 
   .intro-text {
@@ -421,6 +454,9 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .main p {
+    font-size: 3rem;
   }
   #adjust,
   .socials i,
